@@ -5,12 +5,12 @@ DROP TABLE IF EXISTS ,BASE_MANUFACTURER,;,,,,,,,
 CREATE TABLE ,BASE_MANUFACTURER,(,,,,,,,
 ,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
 ,NAME,VARCHAR(255) ,,,,,COMMENT,'单位名称',","
-,address,VARCHAR(100) ,,,,,COMMENT ,'地址',","
-,level_id,VARCHAR(100) ,,,,,COMMENT ,'类别ID',","
-,level_name,VARCHAR(100) ,,,,,COMMENT ,'类别名称',","
-,contact,VARCHAR(100) ,,,,,COMMENT ,'联系人',","
-,tel,VARCHAR(100) ,,,,,COMMENT ,'联系电话',","
-,email,VARCHAR(100) ,,,,,COMMENT ,'联系邮箱',","
+,ADDRESS,VARCHAR(100) ,,,,,COMMENT ,'地址',","
+,TYPE_ID,VARCHAR(100) ,,,,,COMMENT ,'类别ID',","
+,TYPE_NAME,VARCHAR(100) ,,,,,COMMENT ,'类别名称',","
+,CONTACT,VARCHAR(100) ,,,,,COMMENT ,'联系人',","
+,TEL,VARCHAR(100) ,,,,,COMMENT ,'联系电话',","
+,EMAIL,VARCHAR(100) ,,,,,COMMENT ,'联系邮箱',","
 ,CREATE_TIME,datetime,,,,,COMMENT ,'创建时间',","
 ,LAST_UPDATE,datetime,,,,,COMMENT ,'更新时间',","
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'存储设备制造商',;,,,,,,,

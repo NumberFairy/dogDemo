@@ -5,7 +5,7 @@ DROP TABLE IF EXISTS ,BASE_TCF,;,,,,,,,
 CREATE TABLE ,BASE_TCF,(,,,,,,,
 ,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
 ,TASK_CODE,VARCHAR(100) ,,,,,COMMENT ,'任务编号',","
-,,VARCHAR(100) ,,,,,COMMENT ,'项目编号',","
+,project_code,VARCHAR(100) ,,,,,COMMENT ,'项目编号',","
 ,CREATE_TIME,datetime,,,,,COMMENT ,'创建时间',","
 ,LAST_UPDATE,datetime,,,,,COMMENT ,'更新时间',","
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'TCF存档（上传文件）',;,,,,,,,

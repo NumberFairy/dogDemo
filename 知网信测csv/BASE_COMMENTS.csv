@@ -4,10 +4,10 @@
 DROP TABLE IF EXISTS ,BASE_COMMENTS,;,,,,,,,
 CREATE TABLE ,BASE_COMMENTS,(,,,,,,,
 ,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
-,,VARCHAR(100) ,,,,,COMMENT ,'任务编号',","
-,,VARCHAR(100) ,,,,,COMMENT ,'项目编号',","
-,,VARCHAR(100) ,,,,,COMMENT ,'测试领域',","
-,,VARCHAR(100) ,,,,,COMMENT ,'提交时间',","
+, TASK_CODE,VARCHAR(100) ,,,,,COMMENT ,'任务编号',","
+,PROJECT_CODE,VARCHAR(100) ,,,,,COMMENT ,'项目编号',","
+,TEST_FIELD,VARCHAR(100) ,,,,,COMMENT ,'测试领域',","
+,SUBMISSION_TIME,VARCHAR(100) ,,,,,COMMENT ,'提交时间',","
 ,CREATE_TIME,datetime,,,,,COMMENT ,'创建时间',","
 ,LAST_UPDATE,datetime,,,,,COMMENT ,'更新时间',","
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'COMMENTS 反馈（上传文件）',;,,,,,,,

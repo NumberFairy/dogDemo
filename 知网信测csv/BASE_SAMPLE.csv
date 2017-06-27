@@ -5,15 +5,15 @@ DROP TABLE IF EXISTS ,BASE_SAMPLE,;,,,,,,,
 CREATE TABLE ,BASE_SAMPLE,(,,,,,,,
 ,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
 ,TASK_CODE,VARCHAR(100) ,,,,,COMMENT ,'样品编号',","
-,,VARCHAR(100) ,,,,,COMMENT ,'样品类型',","
-,,VARCHAR(100) ,,,,,COMMENT ,'子类型',","
+,sample_TYPE,VARCHAR(100) ,,,,,COMMENT ,'样品类型',","
+,subtype,VARCHAR(100) ,,,,,COMMENT ,'子类型',","
 ,NAME,VARCHAR(100) ,,,,,COMMENT ,'NAME',","
 ,Manufactures,VARCHAR(100) ,,,,,COMMENT ,'Manufactures',","
 ,capacity ,VARCHAR(100) ,,,,,COMMENT ,'capacity ',","
-,SN ,VARCHAR(100) ,,,,,COMMENT ,'SN ',
-,Nominal Voltage,VARCHAR(100) ,,,,,COMMENT ,'Nominal Voltage',
-,model,VARCHAR(100) ,,,,,COMMENT ,'model',
-,MOU,VARCHAR(100) ,,,,,COMMENT ,'MOU',
+,SN ,VARCHAR(100) ,,,,,COMMENT ,'SN ',","
+,Nominal Voltage,VARCHAR(100) ,,,,,COMMENT ,'Nominal Voltage',","
+,model,VARCHAR(100) ,,,,,COMMENT ,'model',","
+,MOU,VARCHAR(100) ,,,,,COMMENT ,'MOU',","
 ,CREATE_TIME,datetime,,,,,COMMENT ,'创建时间',","
 ,LAST_UPDATE,datetime,,,,,COMMENT ,'更新时间',","
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'样品管理（流程转记录、整改记录-换硬件）',;,,,,,,,

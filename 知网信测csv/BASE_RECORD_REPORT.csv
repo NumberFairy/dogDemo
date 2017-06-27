@@ -5,11 +5,11 @@ DROP TABLE IF EXISTS ,BASE_RECORD_REPORT,;,,,,,,,
 CREATE TABLE ,BASE_RECORD_REPORT,(,,,,,,,
 ,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
 ,TASK_CODE,VARCHAR(100) ,,,,,COMMENT ,'任务编号',","
-,,VARCHAR(100) ,,,,,COMMENT ,'项目编号',","
-,,VARCHAR(100) ,,,,,COMMENT ,'报告',","
-,,VARCHAR(100) ,,,,,COMMENT ,'原始记录',","
-,,datetime,,,,,COMMENT ,'上传时间',","
-,,int(1) ,,,,,COMMENT ,'状态',","
+,PROJECT_CODE,VARCHAR(100) ,,,,,COMMENT ,'项目编号',","
+,REPORT,VARCHAR(100) ,,,,,COMMENT ,'报告',","
+,ORIGINAL,VARCHAR(100) ,,,,,COMMENT ,'原始记录',","
+,UPLOAD_TIME,datetime,,,,,COMMENT ,'上传时间',","
+,STATUS,int(1) ,,,,,COMMENT ,'状态',","
 ,CREATE_TIME,datetime,,,,,COMMENT ,'创建时间',","
 ,LAST_UPDATE,datetime,,,,,COMMENT ,'更新时间',","
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'原始记录和报告',;,,,,,,,
