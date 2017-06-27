@@ -1,18 +1,18 @@
-#报价申请（流程）,字段,类型,"约束
+#项目评估（转化为项目）,字段,类型,"约束
 (NOT NULL)",键,,"默认值
 (DEFAULT NULL/'123')",说明命令,说明内容,
 DROP TABLE IF EXISTS ,BASE_QUOTE_APPLY,;,,,,,,,
 CREATE TABLE ,BASE_QUOTE_APPLY,(,,,,,,,
 ,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
 ,CUS_ID,VARCHAR(100) ,,,,,COMMENT ,'客户ID',","
-,QUOTE_NO,VARCHAR(100) ,,,,,COMMENT ,'评估单编号',","
-,PROJECT_EVALUATION_CODE,VARCHAR(100) ,,,,,COMMENT ,'项目评估号',","
-,QUOTE_MONEY,VARCHAR(100) ,,,,,COMMENT ,'报价金额',","
+,QUOTE_NO,VARCHAR(100) ,,,,,COMMENT ,'报价单号',","
+,EVALUATE_NO,VARCHAR(100) ,,,,,COMMENT ,'项目评估号',","
+,QUOTE_MONEY,DOUBLE,,,,,COMMENT ,'报价金额',","
 ,PAYMENT_METHOD_ID,VARCHAR(100) ,,,,,COMMENT ,'付款方式ID',","
 ,PAYMENT_METHOD_NAME,VARCHAR(100) ,,,,,COMMENT ,'付款方式名称',","
-,OFFER_VALID,VARCHAR(100) ,,,,,COMMENT ,'报价有效期',","
+,OFFER_VALID,DATE,,,,,COMMENT ,'报价有效期',","
 ,OFFERER,VARCHAR(100) ,,,,,COMMENT ,'报价人',","
 ,OFFER_TIME,datetime,,,,,COMMENT ,'报价时间',","
 ,CREATE_TIME,datetime,,,,,COMMENT ,'创建时间',","
 ,LAST_UPDATE,datetime,,,,,COMMENT ,'更新时间',","
-)ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'报价申请（流程）',;,,,,,,,
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'报价申请',;,,,,,,,

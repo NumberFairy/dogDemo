@@ -1,18 +1,13 @@
-#供应商报价单,字段,类型,"约束
+#联系人信息,字段,类型,"约束
 (NOT NULL)",键,,"默认值
-(DEFAULT NULL/'123')",说明命令,说明内容,,
-DROP TABLE IF EXISTS ,BASE_CONTACT,;,,,,,,,,
-CREATE TABLE ,BASE_CONTACT,(,,,,,,,,
-,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,",",
-,NAME,VARCHAR(100),,,,,COMMENT,'联系人',",",
-,TEL,CARCHAR(100),,,,,COMMENT ,'联系人电话'',",",
-,EMAIL,CARCHAR(100),,,,,COMMENT ,'邮箱',",",
-,CREATE_TIME,datetime,,,,,COMMENT ,'创建时间',",",
-,LAST_UPDATE,datetime,,,,,COMMENT ,'更新时间',",",
-)ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'联系人信息',;,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
+(DEFAULT NULL/'123')",说明命令,说明内容,
+DROP TABLE IF EXISTS ,BASE_CONTACT,;,,,,,,,
+CREATE TABLE ,BASE_CONTACT,(,,,,,,,
+,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
+,CUS_ID,VARCHAR(100),,,,,COMMENT,'客户ID',","
+,NAME,VARCHAR(100),,,,,COMMENT,'联系人',","
+,TEL,VARCHAR(100),,,,,COMMENT ,'联系人电话'',","
+,EMAIL,VARCHAR(100),,,,,COMMENT ,'邮箱',","
+,CREATE_TIME,datetime,,,,,COMMENT ,'创建时间',","
+,LAST_UPDATE,datetime,,,,,COMMENT ,'更新时间',","
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'联系人信息',;,,,,,,,

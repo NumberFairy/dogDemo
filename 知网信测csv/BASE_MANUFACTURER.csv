@@ -6,8 +6,6 @@ CREATE TABLE ,BASE_MANUFACTURER,(,,,,,,,
 ,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
 ,NAME,VARCHAR(255) ,,,,,COMMENT,'单位名称',","
 ,ADDRESS,VARCHAR(100) ,,,,,COMMENT ,'地址',","
-,TYPE_ID,VARCHAR(100) ,,,,,COMMENT ,'类别ID',","
-,TYPE_NAME,VARCHAR(100) ,,,,,COMMENT ,'类别名称',","
 ,CONTACT,VARCHAR(100) ,,,,,COMMENT ,'联系人',","
 ,TEL,VARCHAR(100) ,,,,,COMMENT ,'联系电话',","
 ,EMAIL,VARCHAR(100) ,,,,,COMMENT ,'联系邮箱',","
