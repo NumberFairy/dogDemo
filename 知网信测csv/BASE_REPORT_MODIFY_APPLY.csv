@@ -5,10 +5,11 @@ DROP TABLE IF EXISTS ,BASE_REPORT_MODIFY_APPLY,;,,,,,,,
 CREATE TABLE ,BASE_REPORT_MODIFY_APPLY,(,,,,,,,
 ,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
 ,PROJECT_CODE,VARCHAR(100) ,,,,,COMMENT ,'项目编号',","
+,TASK_CODE,VARCHAR(100) ,,,,,COMMENT ,'任务编号',","
 ,EVALUATE_NO,VARCHAR(100) ,,,,,COMMENT ,'评估单号',","
 ,REPORT_NAME,VARCHAR(100) ,,,,,COMMENT ,'报告名称',","
 ,SUBMITTER,VARCHAR(100) ,,,,,COMMENT ,'提交人',","
-,STATUS,VARCHAR(100) ,,,,,COMMENT ,'状态',","
+,REASON,VARCHAR(255) ,,,,,COMMENT ,'修改原因',","
 ,CREATE_TIME,datetime,,,,,COMMENT ,'创建时间',","
 ,LAST_UPDATE,datetime,,,,,COMMENT ,'更新时间',","
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'报告修改申请（流程）',;,,,,,,,

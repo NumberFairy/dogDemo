@@ -1,15 +1,15 @@
-#测试资源预约情况,字段,类型,"约束
+#测试资源预约情况（关键字段：预约名称、预约时间段、预约时长、）,字段,类型,"约束
 (NOT NULL)",键,,"默认值
 (DEFAULT NULL/'123')",说明命令,说明内容,
 DROP TABLE IF EXISTS ,BASE_TEST_RESOURCE_APPOINT,;,,,,,,,
 CREATE TABLE ,BASE_TEST_RESOURCE_APPOINT,(,,,,,,,
 ,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
-,TASK_CODE,VARCHAR(100) ,,,,,COMMENT ,'预约单号',","
-,project_code,VARCHAR(100) ,,,,,COMMENT ,'项目编号',","
-,APPOINT_person,VARCHAR(100) ,,,,,COMMENT ,'预约人',","
-,start_time,datetime,,,,,COMMENT ,'预约开始时间',","
-,end_time,datetime,,,,,COMMENT ,'预约结束时间',","
-,SUBMISSION_TIME,datetime,,,,,COMMENT ,'提交时间',","
+,PROJECT_CODE,VARCHAR(100) ,,,,,COMMENT ,'项目编号',","
+,ORDER_NAME,VARCHAR(100) ,,,,,COMMENT ,'预约名称',","
+,START_TIME,datetime,,,,,COMMENT ,'开始预约时间段',","
+,END_TIME,datetime,,,,,COMMENT ,'结束预约时间段',","
+,ORDER_DURATION,VARCHAR(100) ,,,,,COMMENT ,'预约时长',","
+,SOURCE_ID,VARCHAR(100) ,,,,,COMMENT ,'测试资源ID',","
 ,CREATE_TIME,datetime,,,,,COMMENT ,'创建时间',","
 ,LAST_UPDATE,datetime,,,,,COMMENT ,'更新时间',","
-)ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'测试资源预约情况',;,,,,,,,
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'测试资源预约情况（关键字段：预约名称、预约时间段、预约时长、）',;,,,,,,,

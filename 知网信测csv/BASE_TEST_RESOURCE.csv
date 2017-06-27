@@ -1,0 +1,17 @@
+#：测试资源管理（关键字段：CURR_DAY、领域ID、领域NAME、独立测试系统个数、极限工时、已分配工时、剩余工时、是否可预约）,字段,类型,"约束
+(NOT NULL)",键,,"默认值
+(DEFAULT NULL/'123')",说明命令,说明内容,
+DROP TABLE IF EXISTS ,BASE_TEST_RESOURCE,;,,,,,,,
+CREATE TABLE ,BASE_TEST_RESOURCE,(,,,,,,,
+,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
+,field_id,VARCHAR(100) ,,,,,COMMENT ,'领域ID',","
+,curr_day,datetime,,,,,COMMENT ,'CURR_DAY',","
+,field_name,VARCHAR(100) ,,,,,COMMENT ,'领域NAME',","
+,num,int,,,,,COMMENT ,'独立测试系统个数',","
+,limit_time,VARCHAR(100) ,,,,,COMMENT ,'极限工时',","
+,assign_time,VARCHAR(100) ,,,,,COMMENT ,'已分配工时',","
+,Surplus_time,datetime,,,,,COMMENT ,'剩余工时',","
+,is_order,VARCHAR(100) ,,,,,COMMENT ,'是否可预约',","
+,CREATE_TIME,datetime,,,,,COMMENT ,'创建时间',","
+,LAST_UPDATE,datetime,,,,,COMMENT ,'更新时间',","
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'测试资源管理（关键字段：CURR_DAY、领域ID、领域NAME、独立测试系统个数、极限工时、已分配工时、剩余工时、是否可预约）',;,,,,,,,

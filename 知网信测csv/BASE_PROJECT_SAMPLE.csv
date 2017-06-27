@@ -4,6 +4,7 @@
 DROP TABLE IF EXISTS ,BASE_SAMPLE,;,,,,,,,
 CREATE TABLE ,BASE_SAMPLE,(,,,,,,,
 ,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
+,PROJECT_ID,VARCHAR(100) ,,,,,COMMENT ,'项目ID',","
 ,TASK_CODE,VARCHAR(100) ,,,,,COMMENT ,'样品编号',","
 ,sample_TYPE,VARCHAR(100) ,,,,,COMMENT ,'样品类型',","
 ,TYPE,VARCHAR(100) ,,,,,COMMENT ,'TYPE',","

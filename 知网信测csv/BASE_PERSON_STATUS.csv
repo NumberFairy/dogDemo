@@ -5,8 +5,9 @@ DROP TABLE IF EXISTS ,BASE_PERSON_STATUS,;,,,,,,,
 CREATE TABLE ,BASE_PERSON_STATUS,(,,,,,,,
 ,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
 ,LOGIN_NAME,VARCHAR(100),,,,,COMMENT,'登录名',","
-,TIME_PERIOD,VARCHAR(100),,,,,COMMENT,'时间段',","
-,STATUS,VARCHAR(100),,,,,COMMENT,'忙闲状态',","
+,date,date,,,,,COMMENT,'日期',","
+,TIME_PERIOD,VARCHAR(100),,,,,COMMENT,'上下午',","
+,STATUS,INT(1),,,,,COMMENT,'忙闲状态',","
 ,CREATE_TIME,datetime,,,,,COMMENT,'创建时间',","
 ,LAST_UPDATE,datetime,,,,,COMMENT,'更新时间',","
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'个人状态忙闲设置（可查看）',;,,,,,,,

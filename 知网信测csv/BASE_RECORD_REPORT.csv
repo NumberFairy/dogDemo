@@ -6,6 +6,7 @@ CREATE TABLE ,BASE_RECORD_REPORT,(,,,,,,,
 ,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
 ,TASK_CODE,VARCHAR(100) ,,,,,COMMENT ,'任务编号',","
 ,PROJECT_CODE,VARCHAR(100) ,,,,,COMMENT ,'项目编号',","
+,type,VARCHAR(100) ,,,,,COMMENT ,'文件类型',","
 ,REPORT,VARCHAR(100) ,,,,,COMMENT ,'报告',","
 ,ORIGINAL,VARCHAR(100) ,,,,,COMMENT ,'原始记录',","
 ,UPLOAD_TIME,datetime,,,,,COMMENT ,'上传时间',","
