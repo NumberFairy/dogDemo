@@ -1,0 +1,18 @@
+#合同付款情况（不同批次）,字段,类型,"约束
+(NOT NULL)",键,,"默认值
+(DEFAULT NULL/'123')",说明命令,说明内容,
+DROP TABLE IF EXISTS ,BASE_CONTRACT_PAYMENT,;,,,,,,,
+CREATE TABLE ,BASE_CONTRACT_PAYMENT,(,,,,,,,
+,id,VARCHAR(36) ,NOT NULL,primary key,,,,,","
+,CONTRACT _CODE,VARCHAR(100) ,,,,,COMMENT ,'合同编号',","
+,QUOTE_NO,VARCHAR(100) ,,,,,COMMENT ,'付款批次',","
+,EVALUATE_NO,VARCHAR(100) ,,,,,COMMENT ,'付款金额',","
+,,datetime,,,,,COMMENT ,'付款时间',","
+,,VARCHAR(100) ,,,,,COMMENT ,'是否开票',","
+,,VARCHAR(100) ,,,,,COMMENT ,'发票金额',","
+,,VARCHAR(100) ,,,,,COMMENT ,'发票抬头',","
+,,VARCHAR(100) ,,,,,COMMENT ,'发票性质',","
+,,VARCHAR(100) ,,,,,COMMENT ,'收取方式',","
+,CREATE_TIME,datetime,,,,,COMMENT ,'创建时间',","
+,LAST_UPDATE,datetime,,,,,COMMENT ,'更新时间',","
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'合同付款情况（不同批次）',;,,,,,,,

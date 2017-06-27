@@ -1,0 +1,25 @@
+#测试计划管理（面向领域负责人，项目下发任务时生成数据）,字段,类型,"约束
+(NOT NULL)",键,,"默认值
+(DEFAULT NULL/'123')",说明命令,说明内容,
+DROP TABLE IF EXISTS ,BASE_FIELD_TEST_PLAN,;,,,,,,,
+CREATE TABLE ,BASE_FIELD_TEST_PLAN,(,,,,,,,
+,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
+,TASK_CODE,VARCHAR(100) ,,,,,COMMENT ,'任务编号',","
+,SAMPLE_ID,VARCHAR(100) ,,,,,COMMENT ,'样品ID',","
+,,VARCHAR(100) ,,,,,COMMENT ,'类型',","
+,,VARCHAR(100) ,,,,,COMMENT ,'一级',","
+,,VARCHAR(100) ,,,,,COMMENT ,'计时',","
+,,VARCHAR(100) ,,,,,COMMENT ,'报告',","
+,,VARCHAR(100) ,,,,,COMMENT ,'联系人',","
+,,VARCHAR(100) ,,,,,COMMENT ,'任务号',","
+,,datetime,,,,,COMMENT ,'开始时间',","
+,,datetime,,,,,COMMENT ,'结束时间',","
+,,VARCHAR(100) ,,,,,COMMENT ,'测试地点',","
+,,VARCHAR(100) ,,,,,COMMENT ,'工作号',","
+,,VARCHAR(100) ,,,,,COMMENT ,'设备型号',","
+,,VARCHAR(100) ,,,,,COMMENT ,'设备名称',","
+,,VARCHAR(100) ,,,,,COMMENT ,' 生产厂家',","
+,,double ,,,,,COMMENT ,'百分比',","
+,CREATE_TIME,datetime,,,,,COMMENT ,'创建时间',","
+,LAST_UPDATE,datetime,,,,,COMMENT ,'更新时间',","
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'测试计划管理（面向领域负责人，项目下发任务时生成数据）',;,,,,,,,

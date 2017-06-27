@@ -1,0 +1,8 @@
+#供应商报价单,字段,类型,"约束
+(NOT NULL)",键,,"默认值
+(DEFAULT NULL/'123')",说明命令,说明内容,
+DROP TABLE IF EXISTS ,DIC_SUBPACKAGE_TYPE,;,,,,,,,
+CREATE TABLE ,DIC_SUBPACKAGE_TYPE,(,,,,,,,
+,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
+,VALUE,VARCHAR(100),,,,,COMMENT,'分包类型',","
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'字典表之分包类型',;,,,,,,,

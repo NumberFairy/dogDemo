@@ -1,0 +1,19 @@
+#供应商报价单,字段,类型,"约束
+(NOT NULL)",键,,"默认值
+(DEFAULT NULL/'123')",说明命令,说明内容,
+DROP TABLE IF EXISTS ,BASE_SATISFACTION,;,,,,,,,
+CREATE TABLE ,BASE_SATISFACTION,(,,,,,,,
+,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
+,CUS_ID,VARCHAR(100),,,,,COMMENT,'客户ID',","
+,CUS_NAME,VARCHAR(100) ,,,,,COMMENT,'客户',","
+,,VARCHAR(100) ,,,,,COMMENT,'反馈方式',","
+,,VARCHAR(100),,,,,COMMENT,'技术能力',","
+,,VARCHAR(100),,,,,COMMENT,'设备能力',","
+,,VARCHAR(100) ,,,,,COMMENT,'服务能力',","
+,,VARCHAR(100),,,,,COMMENT,'服务态度',","
+,,VARCHAR(100),,,,,COMMENT,'项目管理',","
+,,VARCHAR(100),,,,,COMMENT,'其他',","
+,,VARCHAR(100),,,,,COMMENT,'总体',","
+,CREATE_TIME,datetime,,,,,COMMENT,'创建时间',","
+,LAST_UPDATE,datetime,,,,,COMMENT,'更新时间',","
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'满意度调查（前后太都可录入）',;,,,,,,,

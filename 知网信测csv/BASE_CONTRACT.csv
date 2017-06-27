@@ -1,0 +1,28 @@
+#供应商报价单,字段,类型,"约束
+(NOT NULL)",键,,"默认值
+(DEFAULT NULL/'123')",说明命令,说明内容,
+DROP TABLE IF EXISTS ,BASE_CONTRACT,;,,,,,,,
+CREATE TABLE ,BASE_CONTRACT,(,,,,,,,
+,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
+,CODE,VARCHAR(100),,,,,COMMENT,'合同编号',","
+,NAME,VARCHAR(100),,,,,COMMENT,'合同名称',","
+,,INT,,,,,COMMENT,'是否分包合同',","
+,QUOTE_NO,VARCHAR(100),,,,,COMMENT,'报价单号',","
+,CUS_ID,VARCHAR(100),,,,,COMMENT,'客户ID',","
+,EVALUATE_NO,VARCHAR(100) ,,,,,COMMENT,'评估单编号',","
+,PROJECT_CODE,VARCHAR(100) ,,,,,COMMENT,'项目编号',","
+,FIRST_PARTY_COMPANY,VARCHAR(100),,,,,COMMENT,'甲方',","
+,FIRST_PARTY_CONTACT,VARCHAR(100),,,,,COMMENT,'甲方联系人',","
+,FIRST_PARTY_TEL,VARCHAR(100) ,,,,,COMMENT,'甲方联系电话',","
+,FIRST_PARTY_ADDRESS,VARCHAR(100),,,,,COMMENT,'甲方地址',","
+,SECOND_PARTY,VARCHAR(100),,,,,COMMENT,'乙方',","
+,SIGN_TIME,VARCHAR(100),,,,,COMMENT,'签订时间',","
+,SIGN_MONEY,DOUBLE,,,,,COMMENT,'签订金额',","
+,CUSTOMER_MANAGER,VARCHAR(100),,,,,COMMENT,'客户经理',","
+,PROJECT_MANAGER,VARCHAR(100),,,,,COMMENT,'项目经理',","
+,TEST_DEPT,VARCHAR(100),,,,,COMMENT,'测试部门',","
+,CONTACT_MSG,VARCHAR(100),,,,,COMMENT,'联系人信息',","
+,STATUS,INT,,,,,COMMENT,'状态',","
+,CREATE_TIME,datetime,,,,,COMMENT,'创建时间',","
+,LAST_UPDATE,datetime,,,,,COMMENT,'更新时间',","
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'合同管理（报价单可生成合同）',;,,,,,,,

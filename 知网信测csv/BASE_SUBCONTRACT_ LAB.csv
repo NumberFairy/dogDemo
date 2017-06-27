@@ -1,0 +1,19 @@
+#分包实验室管理,字段,类型,"约束
+(NOT NULL)",键,,"默认值
+(DEFAULT NULL/'123')",说明命令,说明内容,
+DROP TABLE IF EXISTS ,BASE_SUBPACKAGE,;,,,,,,,
+CREATE TABLE ,BASE_SUBPACKAGE,(,,,,,,,
+,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
+,,VARCHAR(100) ,,,,,COMMENT ,'分包申请编号',","
+,NAME,VARCHAR(100) ,,,,,COMMENT ,'分包实验室名称',","
+,,VARCHAR(100) ,,,,,COMMENT ,'分包发起人',","
+,,VARCHAR(100) ,,,,,COMMENT ,'客户经理',","
+,,VARCHAR(100) ,,,,,COMMENT ,'项目经理',","
+,,VARCHAR(100) ,,,,,COMMENT ,'厂家名称',","
+,,VARCHAR(100) ,,,,,COMMENT ,分包类型ID,","
+,,VARCHAR(100) ,,,,,COMMENT ,'分包类型',","
+,,VARCHAR(100) ,,,,,COMMENT ,'分包原因',","
+,,double,,,,,COMMENT ,'预计分包金额',","
+,CREATE_TIME,datetime,,,,,COMMENT ,'创建时间',","
+,LAST_UPDATE,datetime,,,,,COMMENT ,'更新时间',","
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'分包实验室管理',;,,,,,,,

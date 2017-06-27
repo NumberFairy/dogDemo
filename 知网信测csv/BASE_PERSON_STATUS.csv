@@ -1,0 +1,12 @@
+#供应商报价单,字段,类型,"约束
+(NOT NULL)",键,,"默认值
+(DEFAULT NULL/'123')",说明命令,说明内容,
+DROP TABLE IF EXISTS ,BASE_PERSON_STATUS,;,,,,,,,
+CREATE TABLE ,BASE_PERSON_STATUS,(,,,,,,,
+,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
+,LOGIN_NAME,VARCHAR(100),,,,,COMMENT,'登录名',","
+,TIME_PERIOD,VARCHAR(100),,,,,COMMENT,'时间段',","
+,STATUS,VARCHAR(100),,,,,COMMENT,'忙闲状态',","
+,CREATE_TIME,datetime,,,,,COMMENT,'创建时间',","
+,LAST_UPDATE,datetime,,,,,COMMENT,'更新时间',","
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'个人状态忙闲设置（可查看）',;,,,,,,,

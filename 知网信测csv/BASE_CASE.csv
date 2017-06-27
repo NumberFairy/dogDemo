@@ -1,0 +1,11 @@
+#测试项,字段,类型,"约束
+(NOT NULL)",键,,"默认值
+(DEFAULT NULL/'123')",说明命令,说明内容,
+DROP TABLE IF EXISTS ,BASE_Case,;,,,,,,,
+CREATE TABLE ,BASE_Case,(,,,,,,,
+,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
+,name,VARCHAR(100) ,,,,,COMMENT ,'名称',","
+,,VARCHAR(100) ,,,,,COMMENT ,'测试时长',","
+,CREATE_TIME,datetime,,,,,COMMENT ,'创建时间',","
+,LAST_UPDATE,datetime,,,,,COMMENT ,'更新时间',","
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'测试项',;,,,,,,,
