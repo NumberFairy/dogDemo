@@ -1,8 +1,8 @@
 #分包实验室管理,字段,类型,"约束
 (NOT NULL)",键,,"默认值
 (DEFAULT NULL/'123')",说明命令,说明内容,
-DROP TABLE IF EXISTS ,BASE_SUBPACKAGE,;,,,,,,,
-CREATE TABLE ,BASE_SUBPACKAGE,(,,,,,,,
+DROP TABLE IF EXISTS ,BASE_SUBCONTRACT_LAB,;,,,,,,,
+CREATE TABLE ,BASE_SUBCONTRACT_LAB,(,,,,,,,
 ,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
 ,NAME,VARCHAR(100) ,,,,,COMMENT ,'分包实验室名称',","
 ,ADDRESS,VARCHAR(100) ,,,,,COMMENT ,'地址',","

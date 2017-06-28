@@ -2,7 +2,7 @@
 (NOT NULL)",键,,"默认值
 (DEFAULT NULL/'123')",说明命令,说明内容,
 DROP TABLE IF EXISTS ,DIC_BUSINESS_TYPE,;,,,,,,,
-CREATE TABLE ,DIC_SOURCE,(,,,,,,,
+CREATE TABLE ,DIC_BUSINESS_TYPE,(,,,,,,,
 ,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
 ,VALUE,VARCHAR(100),,,,,COMMENT,'业务种类',","
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'字典表之业务种类',;,,,,,,,

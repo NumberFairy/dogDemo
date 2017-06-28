@@ -1,18 +1,19 @@
 #样品管理（流程转记录、整改记录-换硬件）,字段,类型,"约束
 (NOT NULL)",键,,"默认值
 (DEFAULT NULL/'123')",说明命令,说明内容,
-DROP TABLE IF EXISTS ,BASE_SAMPLE,;,,,,,,,
-CREATE TABLE ,BASE_SAMPLE,(,,,,,,,
+DROP TABLE IF EXISTS ,BASE_TASK_SAMPLE,;,,,,,,,
+CREATE TABLE ,BASE_TASK_SAMPLE,(,,,,,,,
 ,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
-,PROJECT_ID,VARCHAR(100) ,,,,,COMMENT ,'项目ID',","
-,TASK_CODE,VARCHAR(100) ,,,,,COMMENT ,'样品编号',","
+,CODE,VARCHAR(100) ,,,,,COMMENT ,'样品编号',","
+,PROJECT_CODE,VARCHAR(100) ,,,,,COMMENT ,'项目编号',","
+,TASK_CODE,VARCHAR(100) ,,,,,COMMENT ,'任务编号',","
 ,sample_TYPE,VARCHAR(100) ,,,,,COMMENT ,'样品类型',","
 ,TYPE,VARCHAR(100) ,,,,,COMMENT ,'TYPE',","
 ,NAME,VARCHAR(100) ,,,,,COMMENT ,'NAME',","
 ,Manufactures,VARCHAR(100) ,,,,,COMMENT ,'Manufactures',","
 ,capacity ,VARCHAR(100) ,,,,,COMMENT ,'capacity ',","
 ,SN ,VARCHAR(100) ,,,,,COMMENT ,'SN ',","
-,Nominal Voltage,VARCHAR(100) ,,,,,COMMENT ,'Nominal Voltage',","
+,Nominal_Voltage,VARCHAR(100) ,,,,,COMMENT ,'Nominal Voltage',","
 ,model,VARCHAR(100) ,,,,,COMMENT ,'model',","
 ,MOU,VARCHAR(100) ,,,,,COMMENT ,'MOU',","
 ,CREATE_TIME,datetime,,,,,COMMENT ,'创建时间',","

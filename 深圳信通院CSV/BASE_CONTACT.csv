@@ -6,7 +6,7 @@ CREATE TABLE ,BASE_CONTACT,(,,,,,,,
 ,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
 ,CUS_ID,VARCHAR(100),,,,,COMMENT,'客户ID',","
 ,NAME,VARCHAR(100),,,,,COMMENT,'联系人',","
-,TEL,VARCHAR(100),,,,,COMMENT ,'联系人电话'',","
+,TEL,VARCHAR(100),,,,,COMMENT ,'联系人电话',","
 ,EMAIL,VARCHAR(100),,,,,COMMENT ,'邮箱',","
 ,CREATE_TIME,datetime,,,,,COMMENT ,'创建时间',","
 ,LAST_UPDATE,datetime,,,,,COMMENT ,'更新时间',","

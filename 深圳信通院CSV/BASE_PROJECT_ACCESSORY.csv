@@ -1,0 +1,20 @@
+#项目配件（配件类型：电池BATTERY、耳机HEADSET、充电器CHARGER、车载套件CAR_KIT、数据线DATA_CABLE、其它OTHER）,字段,类型,"约束
+(NOTNULL)",键,,"默认值
+(DEFAULTNULL/'123')",说明命令,说明内容,
+DROP TABLE IF EXISTS,BASE_PROJECT_ACCESSORY,;,,,,,,,
+CREATE TABLE,BASE_PROJECT_ACCESSORY,(,,,,,,,
+,ID,VARCHAR(36),NOT NULL,primary key,,,,,","
+,PROJECT_CODE,VARCHAR(100),,,,,COMMENT,'PROJECT_CODE',","
+,EVALUATE_NO,VARCHAR(100),,,,,COMMENT,'评估单编号',","
+,Type_name,VARCHAR(100),,,,,COMMENT,'Type_name',","
+,Type,VARCHAR(100),,,,,COMMENT,'Type',","
+,Capacity,VARCHAR(100),,,,,COMMENT,'Capacity(mAh)',","
+,SN,VARCHAR(100),,,,,COMMENT,'SN',","
+,Nominal_Voltage,VARCHAR(100),,,,,COMMENT,'NominalVoltage',","
+,Manufacture,VARCHAR(100),,,,,COMMENT,'Manufacture',","
+,name,VARCHAR(100),,,,,COMMENT,'Name',","
+,Model,VARCHAR(100),,,,,COMMENT,'Model',","
+,MOU,VARCHAR(100),,,,,COMMENT,'MOU',","
+,CREATE_TIME,datetime,,,,,COMMENT,'创建时间',","
+,LAST_UPDATE,datetime,,,,,COMMENT,'更新时间',","
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT=,'项目配件（配件类型：电池BATTERY、耳机HEADSET、充电器CHARGER、车载套件CAR_KIT、数据线DATA_CABLE、其它OTHER）',;,,,,,,,

@@ -20,7 +20,6 @@ CREATE TABLE ,BASE_SUBPACKAGE,(,,,,,,,
 ,BAND,VARCHAR(100) ,,,,,COMMENT ,'频段',","
 ,FEATURE,VARCHAR(100) ,,,,,COMMENT ,'特性',","
 ,TEST_PLATE,VARCHAR(100) ,,,,,COMMENT ,'测试板块',","
-,EVALUATE_NO,VARCHAR(100) ,,,,,COMMENT ,'评估单编号',","
 ,certification_type,VARCHAR(100) ,,,,,COMMENT ,'认证类型',","
 ,CREATE_TIME,datetime,,,,,COMMENT ,'创建时间',","
 ,LAST_UPDATE,datetime,,,,,COMMENT ,'更新时间',","
