@@ -4,10 +4,12 @@
 DROP TABLE IF EXISTS ,BASE_TASK,;,,,,,,,
 CREATE TABLE ,BASE_TASK,(,,,,,,,
 ,ID,VARCHAR(36) ,NOT NULL,primary key,,,,,","
-,TASK_CODE,VARCHAR(100) ,,,,,COMMENT ,'任务编号',","
-,project_code,VARCHAR(100) ,,,,,COMMENT ,'项目编号',","
+,CODE,VARCHAR(100) ,,,,,COMMENT ,'任务编号',","
+,APPOINT_CODE,VARCHAR(100) ,,,,,COMMENT ,'预约编号',","
 ,EVALUATE_CODE,VARCHAR(100) ,,,,,COMMENT ,'评估单号',","
 ,EVALUATE_RESULT_ID,VARCHAR(100) ,,,,,COMMENT ,'评估结果ID',","
+,MODEL_NAME,VARCHAR(100) ,,,,,COMMENT ,'型号名称',","
+,FOLLOW_MANAGER_ID,VARCHAR(100) ,,,,,COMMENT ,'跟踪经理ID',","
 ,start_time,datetime,,,,,COMMENT ,'预约测试开始时间',","
 ,end_time,datetime,,,,,COMMENT ,'预约测试结束时间',","
 ,status,VARCHAR(100) ,,,,,COMMENT ,'状态',","
